@@ -25,6 +25,9 @@ on:
         default: 'false'
         type: boolean
 
+permissions:
+  contents: write   # 允許 Actions bot commit 報告回 repo
+
 jobs:
   run-all-accounts:
     name: 執行所有帳戶策略
