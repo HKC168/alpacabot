@@ -1,0 +1,18 @@
+{
+  "accounts": [
+    {
+      "id": "PA3CVCWGFPAM",
+      "name": "Han Paper Account",
+      "endpoint": "https://paper-api.alpaca.markets",
+      "api_key_env": "ALPACA_KEY_PA3CVCWGFPAM",
+      "secret_key_env": "ALPACA_SECRET_PA3CVCWGFPAM",
+      "active_strategy": "top10_nasdaq_equal",
+      "email": "gavin1.han@gmail.com",
+      "notification": {
+        "trade_alert": true,
+        "daily_report_time": "06:00",
+        "timezone": "America/New_York"
+      }
+    }
+  ]
+}
