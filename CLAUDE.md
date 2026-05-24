@@ -16,30 +16,42 @@
 | Phase | 狀態 | 說明 |
 |-------|------|------|
 | Phase 1：基礎架構 | ✅ 完成 | Alpaca Client、多帳戶載入、全部測試通過 |
-| Phase 2：市場資料 | ⏳ 待開發 | Top10、P/E、報酬率 |
-| Phase 3：策略引擎 | ⏳ 待開發 | JSON 策略載入 |
-| Phase 4～10 | ⏳ 待開發 | 見 ALPACA_PROJECT_PLAN.md |
+| Phase 2：市場資料 | ✅ 完成 | Top10、P/E、報酬率、yfinance |
+| Phase 3：策略引擎 | ✅ 完成 | JSON 策略載入、驗證、整體權重計算 |
+| Phase 4：下單執行 | ✅ 完成 | 防重複下單、資金不足跳過、通知 |
+| Phase 5：再平衡   | ✅ 完成 | 月首交易日、新資金入帳觸發 |
+| Phase 6：日報生成 | ✅ 完成 | JSON Model + HTML View，NAV 歷史 |
+| Phase 7：Dashboard | ✅ 完成 | Streamlit，五分頁，圖表 |
+| Phase 8：Email 通知 | ✅ 完成 | SMTP，日報 + 交易提醒 |
+| Phase 9：GitHub Actions | ✅ 完成 | 自動交易/報告/Email 流程 |
+| Phase 10：整合測試 | ✅ 完成 | 146 個 Mock 測試全數通過 |
+| **雲端 Dashboard** | ✅ 完成 | 不依賴本地電腦，支援 Streamlit Cloud |
 
 ## 目錄結構
 
 ```
 alpacabot/
-├── .github/workflows/daily_trading.yml  # GitHub Actions 主工作流
-├── accounts/account_config.json         # 多帳戶設定（不含金鑰）
-├── strategies/*.json                    # 交易策略（新增策略只加 JSON）
-├── reports/model/                       # 日報 JSON 資料
-├── reports/history/                     # 歷史報告存檔
+├── .github/workflows/daily_trading.yml      # GitHub Actions 主工作流
+├── .streamlit/
+│   ├── config.toml                          # Streamlit 主題設定
+│   └── secrets.toml.example                 # Streamlit Secrets 模板（勿 commit 真實版）
+├── accounts/account_config.json             # 多帳戶設定（不含金鑰）
+├── strategies/*.json                        # 交易策略（新增策略只加 JSON）
+├── reports/model/                           # 日報 JSON 資料
+├── reports/history/                         # 歷史報告存檔
 ├── src/
-│   ├── alpaca_client.py                 # Alpaca API 封裝（核心）
-│   ├── account_loader.py               # 多帳戶載入器
-│   ├── market_data.py                  # 市場資料（Phase 2）
-│   ├── strategy_engine.py              # 策略引擎（Phase 3）
-│   ├── order_executor.py               # 下單執行（Phase 4）
-│   ├── rebalancer.py                   # 再平衡引擎（Phase 5）
-│   ├── report_generator.py             # 日報生成（Phase 6）
-│   └── email_sender.py                 # Email 通知（Phase 8）
-├── dashboard/app.py                    # Streamlit Dashboard（Phase 7）
-└── tests/                              # 每個 Phase 的測試案例
+│   ├── alpaca_client.py                     # Alpaca API 封裝（核心）
+│   ├── account_loader.py                   # 多帳戶載入器
+│   ├── market_data.py                      # 市場資料（yfinance）
+│   ├── strategy_engine.py                  # 策略引擎（JSON 驅動）
+│   ├── order_executor.py                   # 下單執行
+│   ├── rebalancer.py                       # 再平衡引擎
+│   ├── report_generator.py                 # 日報生成（JSON Model）
+│   └── email_sender.py                     # Email 通知（HTML View）
+├── dashboard/
+│   ├── app.py                              # Streamlit 儀錶板（雲端版）
+│   └── data_layer.py                       # 雲端資料抽象層（⭐ 關鍵）
+└── tests/                                  # 全部測試（146 個 Mock）
 ```
 
 ## 核心設計原則
@@ -49,6 +61,7 @@ alpacabot/
 3. **金鑰全從環境變數**：`ALPACA_KEY_<ACCOUNT_ID>`、`ALPACA_SECRET_<ACCOUNT_ID>`，永不寫入程式碼
 4. **多帳戶獨立**：每帳戶同一時間只綁定一個策略，可隨時切換
 5. **測試先行**：每個 Phase 測試 100% 通過才開發下一段
+6. **雲端優先**：Dashboard 不依賴本地環境，資料自動降級（Live → Cached → N/A）
 
 ## 重要環境變數
 
@@ -73,7 +86,9 @@ pytest tests/ -v -m "not live"
 # 執行真實 API 測試（需要環境變數）
 pytest tests/ -v -m live
 
-# 啟動 Dashboard（Phase 7 後可用）
+# 啟動 Dashboard（本地）
+# 先複製金鑰設定：cp .streamlit/secrets.toml.example .streamlit/secrets.toml
+# 再填入真實金鑰，然後：
 streamlit run dashboard/app.py
 
 # 手動執行交易流程
@@ -81,6 +96,30 @@ python src/main.py --mode trading
 
 # 手動產生日報
 python src/main.py --mode report
+```
+
+## 雲端 Dashboard 部署（Streamlit Cloud）
+
+1. Push 到 GitHub（`secrets.toml` 已在 `.gitignore` 中）
+2. 前往 https://share.streamlit.io → "New app"
+3. 選擇 `HKC168/alpacabot`、Branch `main`、Main file `dashboard/app.py`
+4. 點 "Advanced settings" → "Secrets"，貼入 `.streamlit/secrets.toml.example` 的內容（填入真實金鑰）
+5. Deploy — 完成後 Dashboard 從任何地方皆可存取
+
+## Dashboard 資料流（data_layer.py）
+
+```
+get_full_dashboard_data(account_id)
+    ↓
+    fetch_account_info()  →  build_alpaca_client()  →  Alpaca API（即時）
+                          ↘  _load_latest_report_raw()  →  reports/ 目錄（快取）
+    fetch_positions()     同上降級邏輯
+    fetch_orders_today()  同上降級邏輯
+    get_latest_report()   →  reports/ 目錄
+    get_nav_history()     →  reports/nav_history/
+
+憑證取得優先順序：
+  Streamlit Secrets（st.secrets）→ account_config.json + 環境變數
 ```
 
 ## 帳戶資訊
