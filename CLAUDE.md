@@ -26,6 +26,7 @@
 | Phase 9：GitHub Actions | ✅ 完成 | 自動交易/報告/Email 流程 |
 | Phase 10：整合測試 | ✅ 完成 | 146 個 Mock 測試全數通過 |
 | **雲端 Dashboard** | ✅ 完成 | 不依賴本地電腦，支援 Streamlit Cloud |
+| **GitHub Actions 上線** | ✅ 完成 | Secrets 設定完畢，日報自動 commit，首次執行成功 |
 
 ## 目錄結構
 
@@ -128,6 +129,28 @@ get_full_dashboard_data(account_id)
 - 類型：Paper Trading
 - Endpoint：https://paper-api.alpaca.markets
 - 目前現金：$100,000 USD
+- Dashboard URL：https://alpacabot-lzokemn6wu8fiejmlmdf8x.streamlit.app
+
+## GitHub Actions 狀態
+
+| Secret 名稱 | 說明 | 狀態 |
+|------------|------|------|
+| `ALPACA_KEY_PA3CVCWGFPAM` | Alpaca API Key | ✅ 已設定 |
+| `ALPACA_SECRET_PA3CVCWGFPAM` | Alpaca Secret Key | ✅ 已設定 |
+| `SMTP_HOST` | Gmail SMTP | ✅ 已設定（smtp.gmail.com）|
+| `SMTP_PORT` | SMTP Port | ✅ 已設定（587）|
+| `SMTP_USER` | Email 帳號 | ⏳ 待填入（Email 功能尚未啟用）|
+| `SMTP_PASSWORD` | Gmail App 密碼 | ⏳ 待填入（Email 功能尚未啟用）|
+
+**啟用 Email 日報**：在 Gmail 開啟兩步驟驗證 → 產生應用程式密碼 → 更新 SMTP_USER / SMTP_PASSWORD 兩個 Secret。
+
+## 自動排程時間（ET）
+
+| 時間 | 動作 |
+|------|------|
+| 週一至五 09:30 | 交易執行（NASDAQ Top10 再平衡/下單）|
+| 週一至五 16:00 | 日報生成 + commit 到 GitHub |
+| 週一至五 06:00 | Email 日報發送（待 Email 設定後生效）|
 
 ## 策略規格（JSON Schema 重點）
 
