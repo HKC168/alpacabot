@@ -70,11 +70,13 @@ def source_badge(source: str) -> str:
     return "🔴 無資料"
 
 
-def fmt_usd(val) -> str:
+def fmt_usd(val, unavailable: bool = False) -> str:
+    if unavailable:
+        return "—"
     try:
         return f"${float(val):,.2f}"
     except Exception:
-        return "N/A"
+        return "—"
 
 
 def fmt_pct(val, decimals=2) -> str:
@@ -140,6 +142,26 @@ with st.sidebar:
     st.caption(f"快取：60秒自動更新\n最後刷新：{datetime.now().strftime('%H:%M:%S')}")
 
     st.divider()
+
+    # API 連線診斷（折疊，方便排錯）
+    with st.expander("🔧 連線診斷"):
+        from dashboard.data_layer import get_account_config as _get_cfg, build_alpaca_client as _build
+        _cfg = _get_cfg(selected_id)
+        if _cfg:
+            _key = _cfg.get("api_key", "")
+            st.write(f"API Key: `{_key[:4]}...{_key[-4:]}`" if len(_key) >= 8 else "API Key: 未設定")
+            st.write(f"Endpoint: `{_cfg.get('endpoint', '未設定')}`")
+            if st.button("▶ 測試 Alpaca 連線", use_container_width=True):
+                try:
+                    _c = _build(selected_id)
+                    _info = _c.get_account_info()
+                    st.success(f"✅ 連線成功！現金：${_info.get('cash', 0):,.2f}")
+                except Exception as _ex:
+                    st.error(f"❌ 連線失敗：{_ex}")
+        else:
+            st.warning("找不到帳戶設定")
+
+    st.divider()
     st.caption("⚠️ 本平台資訊僅供研究參考\n不構成投資建議")
 
 
@@ -187,8 +209,22 @@ with col_title:
 with col_src:
     st.markdown(f"<div style='margin-top:20px;text-align:right'>{source_badge(account_result.source)}</div>",
                 unsafe_allow_html=True)
-    if account_result.error:
-        st.caption(f"⚠️ {account_result.error[:60]}")
+
+# 當 API 失敗時，顯示完整錯誤原因
+if account_result.error:
+    with st.expander(f"⚠️ API 連線問題（點擊展開）", expanded=False):
+        st.error(account_result.error)
+        st.markdown("""
+**常見解決方式：**
+1. 前往 Streamlit App Settings → Secrets，確認 `api_key` 和 `secret_key` 已正確填寫
+2. 確認格式（以帳戶 ID 為 section 名稱）：
+```toml
+[PA3CVCWGFPAM]
+api_key    = "你的 API Key"
+secret_key = "你的 Secret Key"
+```
+3. 使用左側 Sidebar → 🔧 連線診斷 → ▶ 測試 Alpaca 連線，確認可以直連 API
+""")
 
 st.divider()
 
@@ -207,17 +243,18 @@ with tab1:
     c1, c2, c3, c4 = st.columns(4)
     chg_cls = "up" if (nav_chg or 0) >= 0 else "down"
 
+    _no_data = not account_result.ok
     with c1:
         st.markdown(f"""<div class="metric-card">
           <div class="metric-label">💵 現金水位</div>
-          <div class="metric-value">{fmt_usd(cash)}</div>
-          <div class="metric-change {source_badge(account_result.source).split()[0]}">{source_badge(account_result.source)}</div>
+          <div class="metric-value">{fmt_usd(cash, unavailable=_no_data)}</div>
+          <div class="metric-change">{source_badge(account_result.source)}</div>
         </div>""", unsafe_allow_html=True)
 
     with c2:
         st.markdown(f"""<div class="metric-card">
           <div class="metric-label">📈 帳戶淨值（NAV）</div>
-          <div class="metric-value">{fmt_usd(equity)}</div>
+          <div class="metric-value">{fmt_usd(equity, unavailable=_no_data)}</div>
           <div class="metric-change {chg_cls}">{fmt_pct(nav_chg)} 今日</div>
         </div>""", unsafe_allow_html=True)
 

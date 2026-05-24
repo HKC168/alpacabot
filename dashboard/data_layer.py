@@ -211,11 +211,13 @@ def fetch_account_info(account_id: str) -> DataResult:
     完全失敗 → DataResult(data={}, source="unavailable")
     """
     # ── 嘗試 Alpaca API ──────────────────────────────────────────────────────
+    _api_error: Optional[str] = None
     try:
         client = build_alpaca_client(account_id)
         info   = client.get_account_info()
         return DataResult(data=info, source=DataSource.LIVE)
     except Exception as e:
+        _api_error = str(e)
         logger.warning("Alpaca 帳戶查詢失敗（%s）：%s，嘗試使用快取報告", account_id, e)
 
     # ── 降級：最新報告 ────────────────────────────────────────────────────────
@@ -233,11 +235,11 @@ def fetch_account_info(account_id: str) -> DataResult:
                 "currency":          "USD",
             },
             source=DataSource.CACHED_REPORT,
-            error=str(e) if 'e' in dir() else None,
+            error=_api_error,
         )
 
     return DataResult(data={}, source=DataSource.UNAVAILABLE,
-                      error="API 失敗且無快取報告")
+                      error=_api_error or "API 失敗且無快取報告")
 
 
 def fetch_positions(account_id: str) -> DataResult:
@@ -246,11 +248,13 @@ def fetch_positions(account_id: str) -> DataResult:
 
     降級順序：Alpaca API → 最新報告的 holdings
     """
+    _api_error: Optional[str] = None
     try:
         client    = build_alpaca_client(account_id)
         positions = client.get_positions()
         return DataResult(data=positions, source=DataSource.LIVE)
     except Exception as e:
+        _api_error = str(e)
         logger.warning("持倉查詢失敗（%s）：%s", account_id, e)
 
     report = _load_latest_report_raw(account_id)
@@ -258,8 +262,9 @@ def fetch_positions(account_id: str) -> DataResult:
         return DataResult(
             data=report.get("holdings", []),
             source=DataSource.CACHED_REPORT,
+            error=_api_error,
         )
-    return DataResult(data=[], source=DataSource.UNAVAILABLE)
+    return DataResult(data=[], source=DataSource.UNAVAILABLE, error=_api_error)
 
 
 def fetch_orders_today(account_id: str) -> DataResult:
@@ -268,11 +273,13 @@ def fetch_orders_today(account_id: str) -> DataResult:
 
     降級順序：Alpaca API → 最新報告的 orders_today
     """
+    _api_error: Optional[str] = None
     try:
         client = build_alpaca_client(account_id)
         orders = client.get_orders_today()
         return DataResult(data=orders, source=DataSource.LIVE)
     except Exception as e:
+        _api_error = str(e)
         logger.warning("委託查詢失敗（%s）：%s", account_id, e)
 
     report = _load_latest_report_raw(account_id)
@@ -280,8 +287,9 @@ def fetch_orders_today(account_id: str) -> DataResult:
         return DataResult(
             data=report.get("orders_today", []),
             source=DataSource.CACHED_REPORT,
+            error=_api_error,
         )
-    return DataResult(data=[], source=DataSource.UNAVAILABLE)
+    return DataResult(data=[], source=DataSource.UNAVAILABLE, error=_api_error)
 
 
 # ─── 歷史報告（GitHub repo 檔案）─────────────────────────────────────────────
