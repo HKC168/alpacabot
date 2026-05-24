@@ -1,0 +1,33 @@
+{
+  "strategy_id": "top10_nasdaq_equal",
+  "name": "NASDAQ Top10 等權策略",
+  "version": "1.0",
+  "description": "每日選出 NASDAQ 市值前 10 大股票，各投入總資金 10%，只買整數股。⚠️ 僅供研究參考，不構成投資建議。",
+  "universe": "NASDAQ",
+  "selection": {
+    "method": "market_cap_top_n",
+    "n": 10,
+    "filters": {
+      "min_price": 5,
+      "min_avg_volume": 1000000
+    }
+  },
+  "allocation": {
+    "type": "equal_weight",
+    "per_position_pct": 10,
+    "whole_shares_only": true
+  },
+  "rebalance": {
+    "monthly": true,
+    "on_new_deposit": true
+  },
+  "risk": {
+    "max_drawdown_pct": 20,
+    "stop_loss_pct": null
+  },
+  "watchlist_categories": [
+    { "name": "科技龍頭", "symbols": ["AAPL", "MSFT", "NVDA", "GOOGL", "META"] },
+    { "name": "AI 概念",  "symbols": ["AMD", "PLTR", "AI", "SNOW", "CRWD"] },
+    { "name": "ETF",     "symbols": ["QQQ", "SPY", "ARKK", "SOXX", "VGT"] }
+  ]
+}

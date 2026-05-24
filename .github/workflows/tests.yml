@@ -1,0 +1,31 @@
+name: 🧪 Tests
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Mock Tests（不需要 API Key）
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 🐍 設定 Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 安裝套件
+        run: pip install -r requirements.txt
+
+      - name: 🧪 執行 Mock 測試
+        run: pytest tests/ -v -m "not live" --tb=short --cov=src --cov-report=term-missing
+
+      - name: 📊 顯示覆蓋率摘要
+        run: echo "所有 Mock 測試完成（不含需要網路的 live 測試）"

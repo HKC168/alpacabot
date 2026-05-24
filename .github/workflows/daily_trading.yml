@@ -1,0 +1,96 @@
+name: 📊 AlpacaBot Daily Trading & Report
+
+on:
+  schedule:
+    # 每個交易日 09:30 ET 開盤執行（UTC 13:30）
+    - cron: '30 13 * * 1-5'
+    # 每個交易日 16:00 ET 收盤後報告（UTC 21:00）
+    - cron: '0 21 * * 1-5'
+    # 每日 06:00 ET 發送日報 Email（UTC 11:00）
+    - cron: '0 11 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '執行模式'
+        required: true
+        default: 'report'
+        type: choice
+        options:
+          - trading
+          - report
+          - rebalance
+      force_rebalance:
+        description: '強制再平衡'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  run-all-accounts:
+    name: 執行所有帳戶策略
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: ⬇️ Checkout 程式碼
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 設定 Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 安裝套件
+        run: pip install -r requirements.txt
+
+      - name: 🏦 執行交易（開盤）
+        if: github.event.schedule == '30 13 * * 1-5' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'trading')
+        env:
+          ALPACA_KEY_PA3CVCWGFPAM:    ${{ secrets.ALPACA_KEY_PA3CVCWGFPAM }}
+          ALPACA_SECRET_PA3CVCWGFPAM: ${{ secrets.ALPACA_SECRET_PA3CVCWGFPAM }}
+          SMTP_HOST:                  ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:                  ${{ secrets.SMTP_PORT }}
+          SMTP_USER:                  ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD:              ${{ secrets.SMTP_PASSWORD }}
+        run: python src/main.py --mode trading
+
+      - name: ⚖️ 再平衡
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'rebalance'
+        env:
+          ALPACA_KEY_PA3CVCWGFPAM:    ${{ secrets.ALPACA_KEY_PA3CVCWGFPAM }}
+          ALPACA_SECRET_PA3CVCWGFPAM: ${{ secrets.ALPACA_SECRET_PA3CVCWGFPAM }}
+          SMTP_HOST:                  ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:                  ${{ secrets.SMTP_PORT }}
+          SMTP_USER:                  ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD:              ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ inputs.force_rebalance }}" == "true" ]; then
+            FORCE_FLAG="--force-rebalance"
+          fi
+          python src/main.py --mode rebalance $FORCE_FLAG
+
+      - name: 📋 生成日報 & 發送 Email
+        if: github.event.schedule == '0 21 * * 1-5' || github.event.schedule == '0 11 * * 1-5' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'report')
+        env:
+          ALPACA_KEY_PA3CVCWGFPAM:    ${{ secrets.ALPACA_KEY_PA3CVCWGFPAM }}
+          ALPACA_SECRET_PA3CVCWGFPAM: ${{ secrets.ALPACA_SECRET_PA3CVCWGFPAM }}
+          SMTP_HOST:                  ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:                  ${{ secrets.SMTP_PORT }}
+          SMTP_USER:                  ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD:              ${{ secrets.SMTP_PASSWORD }}
+        run: python src/main.py --mode report
+
+      - name: 💾 Commit 報告至 GitHub
+        run: |
+          git config user.name  "AlpacaBot[bot]"
+          git config user.email "alpacabot@users.noreply.github.com"
+          git add reports/ || true
+          git diff --cached --quiet || git commit -m "📊 Daily report $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push || true
+
+      - name: ✅ 執行完成
+        run: echo "AlpacaBot 本次執行完成 $(date -u)"

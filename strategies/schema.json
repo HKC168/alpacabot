@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["strategy_id", "name", "version", "universe", "selection", "allocation", "rebalance"],
+  "additionalProperties": true,
+  "properties": {
+    "strategy_id":  { "type": "string" },
+    "name":         { "type": "string" },
+    "version":      { "type": "string" },
+    "description":  { "type": "string" },
+    "universe": {
+      "type": "string",
+      "enum": ["NASDAQ", "SP500", "CUSTOM"]
+    },
+    "selection": {
+      "type": "object",
+      "required": ["method", "n"],
+      "properties": {
+        "method":  { "type": "string" },
+        "n":       { "type": "integer", "minimum": 1, "maximum": 50 },
+        "filters": { "type": "object" }
+      }
+    },
+    "allocation": {
+      "type": "object",
+      "required": ["type", "per_position_pct", "whole_shares_only"],
+      "properties": {
+        "type":              { "type": "string" },
+        "per_position_pct":  { "type": "number", "minimum": 1, "maximum": 100 },
+        "whole_shares_only": { "type": "boolean" }
+      }
+    },
+    "rebalance": {
+      "type": "object",
+      "required": ["monthly", "on_new_deposit"],
+      "properties": {
+        "monthly":         { "type": "boolean" },
+        "on_new_deposit":  { "type": "boolean" }
+      }
+    },
+    "risk": { "type": "object" },
+    "watchlist_categories": { "type": "array" }
+  }
+}
