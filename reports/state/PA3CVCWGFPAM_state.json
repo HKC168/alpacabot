@@ -1,8 +1,8 @@
 {
   "account_id": "PA3CVCWGFPAM",
-  "last_cash": 2666.49,
-  "last_nav": 102254.91,
+  "last_cash": 2666.48,
+  "last_nav": 101273.5,
   "peak_nav": 102098.71,
-  "max_drawdown_pct": 0.0,
+  "max_drawdown_pct": 0.8082,
   "last_rebalance_date": null
 }
