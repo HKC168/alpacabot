@@ -1,228 +1,228 @@
 {
   "report_date": "2026-06-30",
-  "generated_at": "2026-06-30T13:11:03.464345",
+  "generated_at": "2026-06-30T22:15:48.189506",
   "account_id": "PA3CVCWGFPAM",
   "account_name": "Han Paper Account",
   "strategy_id": "top10_nasdaq_equal",
   "nav": {
-    "current": 98005.09,
-    "previous_day": 98005.09,
+    "current": 99764.66,
+    "previous_day": 99764.66,
     "change_pct": 0.0
   },
-  "cash": 2033.81,
-  "equity": 98005.09,
-  "buying_power": 269070.26,
+  "cash": 2788.73,
+  "equity": 99764.66,
+  "buying_power": 275012.5,
   "drawdown": {
-    "current_pct": 6.5604,
+    "current_pct": 4.8828,
     "max_pct": 9.8795,
     "peak_nav": 104886.0
   },
   "benchmark": {
-    "nasdaq_1d_pct": 2.0655,
-    "sp500_1d_pct": 1.175
+    "nasdaq_1d_pct": 1.5243,
+    "sp500_1d_pct": 0.792
   },
   "holdings": [
     {
       "symbol": "AAPL",
       "qty": 34.0,
-      "market_value": 9600.24,
+      "market_value": 9825.5818,
       "avg_cost": 306.419945,
-      "current_price": 282.36,
-      "unrealized_pl": -818.03813,
-      "unrealized_plpc": -0.07852
+      "current_price": 288.9877,
+      "unrealized_pl": -592.69633,
+      "unrealized_plpc": -0.05689
     },
     {
       "symbol": "AMD",
-      "qty": 18.0,
-      "market_value": 9725.04,
+      "qty": 17.0,
+      "market_value": 9812.0736,
       "avg_cost": 487.028333,
-      "current_price": 540.28,
-      "unrealized_pl": 958.530006,
-      "unrealized_plpc": 0.10934
+      "current_price": 577.1808,
+      "unrealized_pl": 1532.591939,
+      "unrealized_plpc": 0.18511
     },
     {
       "symbol": "AMZN",
-      "qty": 40.0,
-      "market_value": 9544.0,
-      "avg_cost": 262.126716,
-      "current_price": 238.6,
-      "unrealized_pl": -941.06864,
-      "unrealized_plpc": -0.08975
+      "qty": 41.0,
+      "market_value": 9810.48,
+      "avg_cost": 261.572162,
+      "current_price": 239.28,
+      "unrealized_pl": -913.978642,
+      "unrealized_plpc": -0.08522
     },
     {
       "symbol": "AVGO",
       "qty": 26.0,
-      "market_value": 9762.48,
+      "market_value": 9813.7,
       "avg_cost": 414.591362,
-      "current_price": 375.48,
-      "unrealized_pl": -1016.895412,
-      "unrealized_plpc": -0.09434
+      "current_price": 377.45,
+      "unrealized_pl": -965.675412,
+      "unrealized_plpc": -0.08959
     },
     {
       "symbol": "GOOGL",
       "qty": 27.0,
-      "market_value": 9585.27,
+      "market_value": 9639.0,
       "avg_cost": 377.459886,
-      "current_price": 355.01,
-      "unrealized_pl": -606.146922,
-      "unrealized_plpc": -0.05948
+      "current_price": 357.0,
+      "unrealized_pl": -552.416922,
+      "unrealized_plpc": -0.0542
     },
     {
       "symbol": "META",
       "qty": 17.0,
-      "market_value": 9535.47,
+      "market_value": 9554.17,
       "avg_cost": 604.671912,
-      "current_price": 560.91,
-      "unrealized_pl": -743.952504,
-      "unrealized_plpc": -0.07237
+      "current_price": 562.01,
+      "unrealized_pl": -725.252504,
+      "unrealized_plpc": -0.07055
     },
     {
       "symbol": "MSFT",
       "qty": 26.0,
-      "market_value": 9583.86,
+      "market_value": 9763.0,
       "avg_cost": 409.595903,
-      "current_price": 368.61,
-      "unrealized_pl": -1065.633478,
-      "unrealized_plpc": -0.10006
+      "current_price": 375.5,
+      "unrealized_pl": -886.493478,
+      "unrealized_plpc": -0.08324
     },
     {
       "symbol": "MU",
       "qty": 8.0,
-      "market_value": 9101.7216,
+      "market_value": 9184.16,
       "avg_cost": 921.48625,
-      "current_price": 1137.7152,
-      "unrealized_pl": 1729.8316,
-      "unrealized_plpc": 0.23465
+      "current_price": 1148.02,
+      "unrealized_pl": 1812.27,
+      "unrealized_plpc": 0.24584
     },
     {
       "symbol": "NVDA",
       "qty": 50.0,
-      "market_value": 9802.5,
+      "market_value": 9980.0,
       "avg_cost": 214.4346,
-      "current_price": 196.05,
-      "unrealized_pl": -919.23,
-      "unrealized_plpc": -0.08574
+      "current_price": 199.6,
+      "unrealized_pl": -741.73,
+      "unrealized_plpc": -0.06918
     },
     {
       "symbol": "TSLA",
-      "qty": 24.0,
-      "market_value": 9730.6944,
+      "qty": 23.0,
+      "market_value": 9593.76,
       "avg_cost": 426.65125,
-      "current_price": 405.4456,
-      "unrealized_pl": -508.9356,
-      "unrealized_plpc": -0.0497
+      "current_price": 417.12,
+      "unrealized_pl": -219.21875,
+      "unrealized_plpc": -0.02234
     }
   ],
   "top10_today": [
     {
       "symbol": "NVDA",
       "name": "NVIDIA Corporation",
-      "market_cap": 4722368446464.0,
-      "price": 194.97,
-      "pe_ratio": 29.86,
+      "market_cap": 4846379859968.0,
+      "price": 200.09,
+      "pe_ratio": 30.64,
       "rank": 1,
-      "1d_pct": 1.2673,
-      "1w_pct": -6.5564,
-      "1m_pct": -8.8928
+      "1d_pct": 2.626,
+      "1w_pct": 0.025,
+      "1m_pct": -5.123
     },
     {
       "symbol": "GOOGL",
       "name": "Alphabet Inc.",
-      "market_cap": 4315439693824.0,
-      "price": 353.65,
-      "pe_ratio": 26.96,
+      "market_cap": 4360833335296.0,
+      "price": 357.37,
+      "pe_ratio": 27.24,
       "rank": 2,
-      "1d_pct": 4.8193,
-      "1w_pct": 1.1353,
-      "1m_pct": -9.2966
+      "1d_pct": 1.0519,
+      "1w_pct": 3.2473,
+      "1m_pct": -5.9832
     },
     {
       "symbol": "AAPL",
       "name": "Apple Inc.",
-      "market_cap": 4138015391744.0,
-      "price": 281.74,
-      "pe_ratio": 34.15,
+      "market_cap": 4249933053952.0,
+      "price": 289.36,
+      "pe_ratio": 35.07,
       "rank": 3,
-      "1d_pct": -0.7189,
-      "1w_pct": -5.1412,
-      "1m_pct": -9.8461
+      "1d_pct": 2.7046,
+      "1w_pct": -1.6786,
+      "1m_pct": -7.2742
     },
     {
       "symbol": "MSFT",
       "name": "Microsoft Corporation",
-      "market_cap": 2737898258432.0,
-      "price": 368.57,
-      "pe_ratio": 21.93,
+      "market_cap": 2770954616832.0,
+      "price": 373.02,
+      "pe_ratio": 22.19,
       "rank": 4,
-      "1d_pct": -1.1797,
-      "1w_pct": 0.3348,
-      "1m_pct": -13.6818
+      "1d_pct": 1.2074,
+      "1w_pct": -0.246,
+      "1m_pct": -17.1509
     },
     {
       "symbol": "AMZN",
       "name": "Amazon.com, Inc.",
-      "market_cap": 2583212326912.0,
-      "price": 240.14,
-      "pe_ratio": 31.64,
+      "market_cap": 2563849584640.0,
+      "price": 238.34,
+      "pe_ratio": 31.4,
       "rank": 5,
-      "1d_pct": 3.2017,
-      "1w_pct": 3.1574,
-      "1m_pct": -12.3577
+      "1d_pct": -0.7496,
+      "1w_pct": 1.8068,
+      "1m_pct": -11.9347
     },
     {
       "symbol": "AVGO",
       "name": "Broadcom Inc.",
-      "market_cap": 1771960795136.0,
-      "price": 372.45,
-      "pe_ratio": 62.08,
+      "market_cap": 1797175902208.0,
+      "price": 377.75,
+      "pe_ratio": 62.96,
       "rank": 6,
-      "1d_pct": 2.0355,
-      "1w_pct": -5.0187,
-      "1m_pct": -12.5511
+      "1d_pct": 1.423,
+      "1w_pct": -0.6313,
+      "1m_pct": -15.3148
     },
     {
       "symbol": "TSLA",
       "name": "Tesla, Inc.",
-      "market_cap": 1546757210112.0,
-      "price": 411.84,
-      "pe_ratio": 384.9,
+      "market_cap": 1579657461760.0,
+      "price": 420.6,
+      "pe_ratio": 393.08,
       "rank": 7,
-      "1d_pct": 8.4617,
-      "1w_pct": 1.6763,
-      "1m_pct": -6.8446
+      "1d_pct": 2.127,
+      "1w_pct": 10.2172,
+      "1m_pct": -3.4856
     },
     {
       "symbol": "META",
       "name": "Meta Platforms, Inc.",
-      "market_cap": 1428116865024.0,
-      "price": 562.6,
-      "pe_ratio": 20.45,
+      "market_cap": 1429868380160.0,
+      "price": 563.29,
+      "pe_ratio": 20.48,
       "rank": 8,
-      "1d_pct": 2.2444,
-      "1w_pct": -0.2217,
-      "1m_pct": -11.3599
+      "1d_pct": 0.1226,
+      "1w_pct": 0.1939,
+      "1m_pct": -10.8612
     },
     {
       "symbol": "MU",
       "name": "Micron Technology, Inc.",
-      "market_cap": 1293471449088.0,
-      "price": 1145.28,
-      "pe_ratio": 25.91,
+      "market_cap": 1303647223808.0,
+      "price": 1154.29,
+      "pe_ratio": 26.11,
       "rank": 9,
-      "1d_pct": 1.1437,
-      "1w_pct": -5.4566,
-      "1m_pct": 24.0125
+      "1d_pct": 0.7867,
+      "1w_pct": 9.7474,
+      "1m_pct": 18.8764
     },
     {
       "symbol": "AMD",
       "name": "Advanced Micro Devices, Inc.",
-      "market_cap": 879692677120.0,
-      "price": 539.49,
-      "pe_ratio": 178.64,
+      "market_cap": 947232112640.0,
+      "price": 580.91,
+      "pe_ratio": 192.35,
       "rank": 10,
-      "1d_pct": 3.4338,
-      "1w_pct": -2.2008,
-      "1m_pct": 4.1305
+      "1d_pct": 7.6776,
+      "1w_pct": 11.7457,
+      "1m_pct": 12.5576
     }
   ],
   "prediction_tomorrow": [
@@ -278,6 +278,36 @@
     }
   ],
   "orders_today": [
+    {
+      "order_id": "596e2ad3-5ac3-4be7-ae16-dab28e5c071c",
+      "symbol": "AMZN",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 239.39,
+      "created_at": "2026-06-30T16:08:53.303785637Z"
+    },
+    {
+      "order_id": "ec0287a3-3b3a-416c-a29f-f4345843bf67",
+      "symbol": "AMD",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 577.14,
+      "created_at": "2026-06-30T16:08:53.185300938Z"
+    },
+    {
+      "order_id": "d208f988-c079-4978-be6d-c18aeddc8ad3",
+      "symbol": "TSLA",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 417.17,
+      "created_at": "2026-06-30T16:08:53.097043749Z"
+    },
     {
       "order_id": "452b1a37-4431-4603-a76f-a00dfdd6a541",
       "symbol": "AVGO",
@@ -1247,163 +1277,133 @@
       "filled_qty": 1.0,
       "filled_avg_price": 451.17,
       "created_at": "2026-06-01T22:38:21.43754Z"
-    },
-    {
-      "order_id": "6199e797-672e-46f3-a9ac-6363260a4f85",
-      "symbol": "NVDA",
-      "side": "sell",
-      "qty": 3.0,
-      "status": "filled",
-      "filled_qty": 3.0,
-      "filled_avg_price": 226.12,
-      "created_at": "2026-06-01T22:38:21.481502Z"
-    },
-    {
-      "order_id": "3717637c-69d4-4d95-b216-3ce135ca5077",
-      "symbol": "AVGO",
-      "side": "sell",
-      "qty": 1.0,
-      "status": "filled",
-      "filled_qty": 1.0,
-      "filled_avg_price": 486.81,
-      "created_at": "2026-06-01T22:38:21.526978Z"
-    },
-    {
-      "order_id": "240251dd-ef1d-43a5-914d-b5a6e84b4c98",
-      "symbol": "TSLA",
-      "side": "buy",
-      "qty": 1.0,
-      "status": "filled",
-      "filled_qty": 1.0,
-      "filled_avg_price": 417.06,
-      "created_at": "2026-06-01T22:38:21.628222Z"
     }
   ],
   "watchlist": {
     "科技龍頭": [
       {
         "symbol": "AAPL",
-        "price": 281.74,
-        "pe_ratio": 34.15,
-        "1d_pct": -0.7189,
-        "1w_pct": -5.1412,
-        "1m_pct": -9.8461
+        "price": 289.36,
+        "pe_ratio": 35.07,
+        "1d_pct": 2.7046,
+        "1w_pct": -1.6786,
+        "1m_pct": -7.2742
       },
       {
         "symbol": "MSFT",
-        "price": 368.57,
-        "pe_ratio": 21.93,
-        "1d_pct": -1.1797,
-        "1w_pct": 0.3348,
-        "1m_pct": -13.6818
+        "price": 373.02,
+        "pe_ratio": 22.19,
+        "1d_pct": 1.2074,
+        "1w_pct": -0.246,
+        "1m_pct": -17.1509
       },
       {
         "symbol": "NVDA",
-        "price": 194.97,
-        "pe_ratio": 29.86,
-        "1d_pct": 1.2673,
-        "1w_pct": -6.5564,
-        "1m_pct": -8.8928
+        "price": 200.09,
+        "pe_ratio": 30.64,
+        "1d_pct": 2.626,
+        "1w_pct": 0.025,
+        "1m_pct": -5.123
       },
       {
         "symbol": "GOOGL",
-        "price": 353.65,
-        "pe_ratio": 26.96,
-        "1d_pct": 4.8193,
-        "1w_pct": 1.1353,
-        "1m_pct": -9.2966
+        "price": 357.37,
+        "pe_ratio": 27.24,
+        "1d_pct": 1.0519,
+        "1w_pct": 3.2473,
+        "1m_pct": -5.9832
       },
       {
         "symbol": "META",
-        "price": 562.6,
-        "pe_ratio": 20.45,
-        "1d_pct": 2.2444,
-        "1w_pct": -0.2217,
-        "1m_pct": -11.3599
+        "price": 563.29,
+        "pe_ratio": 20.48,
+        "1d_pct": 0.1226,
+        "1w_pct": 0.1939,
+        "1m_pct": -10.8612
       }
     ],
     "AI 概念": [
       {
         "symbol": "AMD",
-        "price": 539.49,
-        "pe_ratio": 178.64,
-        "1d_pct": 3.4338,
-        "1w_pct": -2.2008,
-        "1m_pct": 4.1305
+        "price": 580.91,
+        "pe_ratio": 192.35,
+        "1d_pct": 7.6776,
+        "1w_pct": 11.7457,
+        "1m_pct": 12.5576
       },
       {
         "symbol": "PLTR",
-        "price": 115.7,
-        "pe_ratio": 130.0,
-        "1d_pct": 2.4528,
-        "1w_pct": -3.1799,
-        "1m_pct": -19.2828
+        "price": 116.67,
+        "pe_ratio": 131.09,
+        "1d_pct": 0.8384,
+        "1w_pct": -0.0257,
+        "1m_pct": -25.4695
       },
       {
         "symbol": "AI",
-        "price": 8.87,
-        "pe_ratio": -19.68,
-        "1d_pct": -0.3371,
-        "1w_pct": -8.5567,
-        "1m_pct": -13.2094
+        "price": 9.09,
+        "pe_ratio": -20.17,
+        "1d_pct": 2.4803,
+        "1w_pct": -6.095,
+        "1m_pct": -15.5989
       },
       {
         "symbol": "SNOW",
-        "price": 251.65,
-        "pe_ratio": 93.67,
-        "1d_pct": 1.0805,
-        "1w_pct": 11.0596,
-        "1m_pct": 5.2048
+        "price": 254.5,
+        "pe_ratio": 94.73,
+        "1d_pct": 1.1325,
+        "1w_pct": 10.4553,
+        "1m_pct": -0.4109
       },
       {
         "symbol": "CRWD",
-        "price": 742.91,
-        "pe_ratio": 119.03,
-        "1d_pct": 5.965,
-        "1w_pct": 9.989,
-        "1m_pct": 10.7168
+        "price": 763.14,
+        "pe_ratio": 122.27,
+        "1d_pct": 2.7231,
+        "1w_pct": 12.0748,
+        "1m_pct": 4.3967
       }
     ],
     "ETF": [
       {
         "symbol": "QQQ",
-        "price": 724.08,
-        "pe_ratio": 33.24,
-        "1d_pct": 2.4854,
-        "1w_pct": -1.8795,
-        "1m_pct": -1.4579
+        "price": 736.4,
+        "pe_ratio": 33.81,
+        "1d_pct": 1.7015,
+        "1w_pct": 3.1878,
+        "1m_pct": -0.1491
       },
       {
         "symbol": "SPY",
-        "price": 741.0,
-        "pe_ratio": 26.54,
-        "1d_pct": 1.6475,
-        "1w_pct": -0.4554,
-        "1m_pct": -1.5493
+        "price": 746.77,
+        "pe_ratio": 26.75,
+        "1d_pct": 0.7787,
+        "1w_pct": 1.798,
+        "1m_pct": -1.0293
       },
       {
         "symbol": "ARKK",
-        "price": 80.63,
-        "pe_ratio": 47.75,
-        "1d_pct": 3.1998,
-        "1w_pct": 2.805,
-        "1m_pct": -0.4691
+        "price": 80.82,
+        "pe_ratio": 47.86,
+        "1d_pct": 0.2356,
+        "1w_pct": 5.3991,
+        "1m_pct": -1.3789
       },
       {
         "symbol": "SOXX",
-        "price": 614.35,
-        "pe_ratio": 43.92,
-        "1d_pct": 4.1377,
-        "1w_pct": -6.2075,
-        "1m_pct": 7.9322
+        "price": 640.76,
+        "pe_ratio": 45.81,
+        "1d_pct": 4.2989,
+        "1w_pct": 6.1933,
+        "1m_pct": 12.6492
       },
       {
         "symbol": "VGT",
-        "price": 116.5,
-        "pe_ratio": 35.01,
-        "1d_pct": 2.3186,
-        "1w_pct": -3.2125,
-        "1m_pct": -1.9431
+        "price": 119.52,
+        "pe_ratio": 35.92,
+        "1d_pct": 2.5923,
+        "1w_pct": 3.0949,
+        "1m_pct": -1.1546
       }
     ]
   },
