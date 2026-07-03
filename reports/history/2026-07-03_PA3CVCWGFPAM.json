@@ -1,6 +1,6 @@
 {
   "report_date": "2026-07-03",
-  "generated_at": "2026-07-03T13:00:49.034046",
+  "generated_at": "2026-07-03T22:05:29.111944",
   "account_id": "PA3CVCWGFPAM",
   "account_name": "Han Paper Account",
   "strategy_id": "top10_nasdaq_equal",
@@ -11,7 +11,7 @@
   },
   "cash": 2874.1,
   "equity": 97677.41,
-  "buying_power": 269391.43,
+  "buying_power": 267809.67,
   "drawdown": {
     "current_pct": 6.8728,
     "max_pct": 9.8795,
@@ -278,6 +278,46 @@
     }
   ],
   "orders_today": [
+    {
+      "order_id": "87d594ea-f47d-4039-8286-a5f2dc65f884",
+      "symbol": "AVGO",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-07-03T15:34:39.12594Z"
+    },
+    {
+      "order_id": "ed5b882e-069f-48de-9045-e93bfbfb7c7e",
+      "symbol": "AMZN",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-07-03T15:34:38.932913Z"
+    },
+    {
+      "order_id": "4df6b706-3917-4a9c-ba6d-f95d6e15a310",
+      "symbol": "MU",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-07-03T15:34:38.777804Z"
+    },
+    {
+      "order_id": "35fd5dac-3f36-416e-9461-86cad4279adf",
+      "symbol": "AAPL",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-07-03T15:34:38.594857Z"
+    },
     {
       "order_id": "788733d5-248f-4874-a7d1-82650ca33dd0",
       "symbol": "TSLA",
@@ -1237,46 +1277,6 @@
       "filled_qty": 1.0,
       "filled_avg_price": 254.83,
       "created_at": "2026-06-04T21:01:23.623969Z"
-    },
-    {
-      "order_id": "1f3c8b93-8af9-4f47-bc28-00fcc9a7065d",
-      "symbol": "MU",
-      "side": "buy",
-      "qty": 1.0,
-      "status": "filled",
-      "filled_qty": 1.0,
-      "filled_avg_price": 955.59,
-      "created_at": "2026-06-04T21:01:25.295567Z"
-    },
-    {
-      "order_id": "949e7f71-fca2-4e7c-833e-91b8b2bfd081",
-      "symbol": "AMD",
-      "side": "buy",
-      "qty": 1.0,
-      "status": "filled",
-      "filled_qty": 1.0,
-      "filled_avg_price": 503.45,
-      "created_at": "2026-06-04T21:01:24.923679Z"
-    },
-    {
-      "order_id": "e1b4dd2c-30eb-4565-9c53-b4331eb26368",
-      "symbol": "AMZN",
-      "side": "buy",
-      "qty": 1.0,
-      "status": "filled",
-      "filled_qty": 1.0,
-      "filled_avg_price": 252.17,
-      "created_at": "2026-06-03T22:33:49.154758Z"
-    },
-    {
-      "order_id": "df2fa33f-8dac-4a11-82ff-49e306ecc87f",
-      "symbol": "META",
-      "side": "sell",
-      "qty": 1.0,
-      "status": "filled",
-      "filled_qty": 1.0,
-      "filled_avg_price": 625.78,
-      "created_at": "2026-06-03T22:33:48.866316Z"
     }
   ],
   "watchlist": {
@@ -1358,7 +1358,7 @@
       {
         "symbol": "CRWD",
         "price": 193.98,
-        "pe_ratio": 124.26,
+        "pe_ratio": 124.21,
         "1d_pct": 0.4115,
         "1w_pct": 14.3329,
         "1m_pct": 0.9064
