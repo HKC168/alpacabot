@@ -1,6 +1,6 @@
 {
   "report_date": "2026-09-07",
-  "generated_at": "2026-09-07T16:20:58.897251",
+  "generated_at": "2026-09-07T23:18:35.134962",
   "account_id": "PA3CVCWGFPAM",
   "account_name": "Han Paper Account",
   "strategy_id": "top10_nasdaq_equal",
@@ -11,7 +11,7 @@
   },
   "cash": 2930.81,
   "equity": 100034.82,
-  "buying_power": 275683.06,
+  "buying_power": 275183.54,
   "drawdown": {
     "current_pct": 4.6252,
     "max_pct": 14.8646,
@@ -278,6 +278,16 @@
     }
   ],
   "orders_today": [
+    {
+      "order_id": "97784a4e-7afa-4ef4-b3c6-7cd20649c479",
+      "symbol": "MSFT",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-09-07T18:21:22.712923401Z"
+    },
     {
       "order_id": "925809ee-7c3f-4269-87b2-4344f0866f36",
       "symbol": "AAPL",
@@ -1267,16 +1277,6 @@
       "filled_qty": 1.0,
       "filled_avg_price": 457.51,
       "created_at": "2026-07-31T15:38:40.340016Z"
-    },
-    {
-      "order_id": "4a12f419-1822-480e-9944-e3558bbe048d",
-      "symbol": "GOOGL",
-      "side": "sell",
-      "qty": 1.0,
-      "status": "filled",
-      "filled_qty": 1.0,
-      "filled_avg_price": 350.3,
-      "created_at": "2026-07-31T15:38:40.108885Z"
     }
   ],
   "watchlist": {
