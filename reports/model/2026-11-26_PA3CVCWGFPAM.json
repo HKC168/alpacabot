@@ -1,0 +1,1411 @@
+{
+  "report_date": "2026-11-26",
+  "generated_at": "2026-11-26T03:23:12.840674",
+  "account_id": "PA3CVCWGFPAM",
+  "account_name": "Han Paper Account",
+  "strategy_id": "top10_nasdaq_equal",
+  "nav": {
+    "current": 86410.22,
+    "previous_day": 86410.22,
+    "change_pct": 0.0
+  },
+  "cash": 2846.64,
+  "equity": 86410.22,
+  "buying_power": 237246.87,
+  "drawdown": {
+    "current_pct": 20.6163,
+    "max_pct": 21.9642,
+    "peak_nav": 108851.33
+  },
+  "benchmark": {
+    "nasdaq_1d_pct": -0.6225,
+    "sp500_1d_pct": -0.2543
+  },
+  "holdings": [
+    {
+      "symbol": "AAPL",
+      "qty": 24.0,
+      "market_value": 8533.92,
+      "avg_cost": 353.272692,
+      "current_price": 355.58,
+      "unrealized_pl": 55.375392,
+      "unrealized_plpc": 0.00653
+    },
+    {
+      "symbol": "AMD",
+      "qty": 20.0,
+      "market_value": 8120.6,
+      "avg_cost": 531.2245,
+      "current_price": 406.03,
+      "unrealized_pl": -2503.89,
+      "unrealized_plpc": -0.23567
+    },
+    {
+      "symbol": "AMZN",
+      "qty": 34.0,
+      "market_value": 8310.62,
+      "avg_cost": 273.035143,
+      "current_price": 244.43,
+      "unrealized_pl": -972.574862,
+      "unrealized_plpc": -0.10477
+    },
+    {
+      "symbol": "AVGO",
+      "qty": 29.0,
+      "market_value": 8724.94,
+      "avg_cost": 355.91931,
+      "current_price": 300.86,
+      "unrealized_pl": -1596.71999,
+      "unrealized_plpc": -0.1547
+    },
+    {
+      "symbol": "GOOGL",
+      "qty": 31.0,
+      "market_value": 8466.1,
+      "avg_cost": 293.712188,
+      "current_price": 273.1,
+      "unrealized_pl": -638.977828,
+      "unrealized_plpc": -0.07018
+    },
+    {
+      "symbol": "META",
+      "qty": 14.0,
+      "market_value": 8538.46,
+      "avg_cost": 624.956,
+      "current_price": 609.89,
+      "unrealized_pl": -210.924,
+      "unrealized_plpc": -0.02411
+    },
+    {
+      "symbol": "MSFT",
+      "qty": 17.0,
+      "market_value": 8328.81,
+      "avg_cost": 519.376667,
+      "current_price": 489.93,
+      "unrealized_pl": -500.593339,
+      "unrealized_plpc": -0.0567
+    },
+    {
+      "symbol": "MU",
+      "qty": 13.0,
+      "market_value": 7816.25,
+      "avg_cost": 718.801538,
+      "current_price": 601.25,
+      "unrealized_pl": -1528.169994,
+      "unrealized_plpc": -0.16354
+    },
+    {
+      "symbol": "NVDA",
+      "qty": 56.0,
+      "market_value": 8360.8,
+      "avg_cost": 156.052143,
+      "current_price": 149.3,
+      "unrealized_pl": -378.120008,
+      "unrealized_plpc": -0.04327
+    },
+    {
+      "symbol": "TSLA",
+      "qty": 22.0,
+      "market_value": 8363.08,
+      "avg_cost": 390.934783,
+      "current_price": 380.14,
+      "unrealized_pl": -237.485226,
+      "unrealized_plpc": -0.02761
+    }
+  ],
+  "top10_today": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "market_cap": 5167353167872.0,
+      "price": 355.58,
+      "pe_ratio": 39.6,
+      "rank": 1,
+      "1d_pct": 0.4265,
+      "1w_pct": 0.8881,
+      "1m_pct": 2.5209
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "market_cap": 3638315450368.0,
+      "price": 489.93,
+      "pe_ratio": 25.57,
+      "rank": 2,
+      "1d_pct": -1.2497,
+      "1w_pct": -3.4259,
+      "1m_pct": -7.6136
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "market_cap": 3605147156480.0,
+      "price": 149.3,
+      "pe_ratio": 16.04,
+      "rank": 3,
+      "1d_pct": -3.913,
+      "1w_pct": -1.0996,
+      "1m_pct": -31.4949
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market_cap": 3357491331072.0,
+      "price": 273.1,
+      "pe_ratio": 14.26,
+      "rank": 4,
+      "1d_pct": -2.1322,
+      "1w_pct": -3.3069,
+      "1m_pct": -14.8107
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "market_cap": 2643055345664.0,
+      "price": 244.43,
+      "pe_ratio": 19.76,
+      "rank": 5,
+      "1d_pct": -3.1155,
+      "1w_pct": -8.7062,
+      "1m_pct": -3.4255
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms, Inc.",
+      "market_cap": 1559025942528.0,
+      "price": 609.89,
+      "pe_ratio": 20.81,
+      "rank": 6,
+      "1d_pct": 3.4027,
+      "1w_pct": -1.0529,
+      "1m_pct": -1.6608
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "market_cap": 1502601543680.0,
+      "price": 380.14,
+      "pe_ratio": 417.74,
+      "rank": 7,
+      "1d_pct": -1.1802,
+      "1w_pct": -0.933,
+      "1m_pct": -6.7049
+    },
+    {
+      "symbol": "AVGO",
+      "name": "Broadcom Inc.",
+      "market_cap": 1436194177024.0,
+      "price": 300.86,
+      "pe_ratio": 38.42,
+      "rank": 8,
+      "1d_pct": -0.0731,
+      "1w_pct": -15.0233,
+      "1m_pct": -12.114
+    },
+    {
+      "symbol": "MU",
+      "name": "Micron Technology, Inc.",
+      "market_cap": 680268201984.0,
+      "price": 601.25,
+      "pe_ratio": 8.09,
+      "rank": 9,
+      "1d_pct": -4.5317,
+      "1w_pct": -14.749,
+      "1m_pct": -35.2631
+    },
+    {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "market_cap": 672006275072.0,
+      "price": 406.03,
+      "pe_ratio": 86.76,
+      "rank": 10,
+      "1d_pct": -1.7519,
+      "1w_pct": -23.4108,
+      "1m_pct": -27.5283
+    }
+  ],
+  "prediction_tomorrow": [
+    {
+      "rank": 1,
+      "symbol": "AAPL",
+      "reason": "市值持續居前10，保持觀察"
+    },
+    {
+      "rank": 2,
+      "symbol": "MSFT",
+      "reason": "市值持續居前10，保持觀察"
+    },
+    {
+      "rank": 3,
+      "symbol": "NVDA",
+      "reason": "市值持續居前10，保持觀察"
+    },
+    {
+      "rank": 4,
+      "symbol": "GOOGL",
+      "reason": "市值持續居前10，保持觀察"
+    },
+    {
+      "rank": 5,
+      "symbol": "AMZN",
+      "reason": "市值持續居前10，保持觀察"
+    },
+    {
+      "rank": 6,
+      "symbol": "META",
+      "reason": "市值持續居前10，保持觀察"
+    },
+    {
+      "rank": 7,
+      "symbol": "TSLA",
+      "reason": "市值持續居前10，保持觀察"
+    },
+    {
+      "rank": 8,
+      "symbol": "AVGO",
+      "reason": "市值持續居前10，保持觀察"
+    },
+    {
+      "rank": 9,
+      "symbol": "MU",
+      "reason": "市值持續居前10，保持觀察"
+    },
+    {
+      "rank": 10,
+      "symbol": "AMD",
+      "reason": "市值持續居前10，保持觀察"
+    }
+  ],
+  "orders_today": [
+    {
+      "order_id": "62a55ad6-ffd1-4e5c-b178-269d40339c01",
+      "symbol": "MU",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-11-25T22:41:06.062406845Z"
+    },
+    {
+      "order_id": "3e62e863-1bf9-48e6-a424-010ae64c8e3a",
+      "symbol": "AMZN",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-11-25T22:41:05.76490087Z"
+    },
+    {
+      "order_id": "737ebeaa-0844-4afe-8811-5421a02e34fa",
+      "symbol": "AMD",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-11-25T22:41:05.490189625Z"
+    },
+    {
+      "order_id": "62d8008b-f961-499b-a583-4afeaa731861",
+      "symbol": "NVDA",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-11-25T22:41:05.221696727Z"
+    },
+    {
+      "order_id": "3544c844-dcba-45bf-9f26-fa0e9ddd5474",
+      "symbol": "AVGO",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "accepted",
+      "filled_qty": 0.0,
+      "filled_avg_price": 0.0,
+      "created_at": "2026-11-25T22:41:04.930452Z"
+    },
+    {
+      "order_id": "cc088ef4-d765-4a52-8a05-0c62508efda4",
+      "symbol": "AMZN",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 242.05,
+      "created_at": "2026-11-24T23:13:38.012259Z"
+    },
+    {
+      "order_id": "aa8fd9b6-094e-4d55-bbc3-044a3622e6a8",
+      "symbol": "AAPL",
+      "side": "sell",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 349.63,
+      "created_at": "2026-11-24T23:13:37.799097Z"
+    },
+    {
+      "order_id": "92d38804-fe8e-4b58-91af-b9ea96d47d9b",
+      "symbol": "GOOGL",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 264.62,
+      "created_at": "2026-11-24T23:13:39.473893Z"
+    },
+    {
+      "order_id": "7d6931ff-df32-49a1-958e-b3078224be31",
+      "symbol": "META",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 574.58,
+      "created_at": "2026-11-24T23:13:37.587006Z"
+    },
+    {
+      "order_id": "6edf561d-19e6-46a4-88cd-4a8291599387",
+      "symbol": "MU",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 570.56,
+      "created_at": "2026-11-24T23:13:40.031574Z"
+    },
+    {
+      "order_id": "6402e364-be90-42bb-b5e7-64913469df2b",
+      "symbol": "NVDA",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 143.03,
+      "created_at": "2026-11-24T23:13:39.73948Z"
+    },
+    {
+      "order_id": "3fa05bbd-081f-4f68-85ad-6299c586aa67",
+      "symbol": "MSFT",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 485.51,
+      "created_at": "2026-11-24T23:13:39.266618Z"
+    },
+    {
+      "order_id": "f8ad33fb-0951-457d-8006-8ffadbf11fb3",
+      "symbol": "TSLA",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 365.35,
+      "created_at": "2026-11-24T23:13:37.372412Z"
+    },
+    {
+      "order_id": "deb708f2-9151-4783-bf02-94c3919d7ebf",
+      "symbol": "MSFT",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 490.37,
+      "created_at": "2026-11-24T01:09:31.293671Z"
+    },
+    {
+      "order_id": "db0c8a40-65bc-4d8a-b4e8-66a3b264c0b6",
+      "symbol": "AAPL",
+      "side": "buy",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 346.945,
+      "created_at": "2026-11-24T01:09:31.041794Z"
+    },
+    {
+      "order_id": "b5c929a6-c6e0-4083-9968-10baed98f1e0",
+      "symbol": "AMD",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 423.29,
+      "created_at": "2026-11-24T01:09:30.285401Z"
+    },
+    {
+      "order_id": "a27ab298-4a0d-4dee-ad2a-ae694a930067",
+      "symbol": "AMZN",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 252.47,
+      "created_at": "2026-11-24T01:09:29.996494Z"
+    },
+    {
+      "order_id": "84293efa-fd36-4818-a3e9-84e1907a5757",
+      "symbol": "AVGO",
+      "side": "buy",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 301.355,
+      "created_at": "2026-11-24T01:09:31.544078Z"
+    },
+    {
+      "order_id": "70753d35-6f34-4b29-942d-45f8b96c0332",
+      "symbol": "NVDA",
+      "side": "sell",
+      "qty": 11.0,
+      "status": "filled",
+      "filled_qty": 11.0,
+      "filled_avg_price": 157.677273,
+      "created_at": "2026-11-24T01:09:29.599678Z"
+    },
+    {
+      "order_id": "36912ad7-617d-4d80-8b81-0597c7b63a5c",
+      "symbol": "GOOGL",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 280.07,
+      "created_at": "2026-11-24T01:09:30.551147Z"
+    },
+    {
+      "order_id": "3446da0e-c077-4d44-8c8a-87ac2cb0bd56",
+      "symbol": "TSLA",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 383.4,
+      "created_at": "2026-11-24T01:09:29.753077Z"
+    },
+    {
+      "order_id": "1114d6ac-df84-4785-9bb7-930b7d5b7084",
+      "symbol": "META",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 590.59,
+      "created_at": "2026-11-24T01:09:30.79002Z"
+    },
+    {
+      "order_id": "ec59e023-eb1a-4a08-b1a0-77d4921eb7c4",
+      "symbol": "MU",
+      "side": "sell",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 650.74,
+      "created_at": "2026-11-24T01:09:29.172784Z"
+    },
+    {
+      "order_id": "ba702541-248c-4ed8-817f-768bcc086908",
+      "symbol": "META",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 592.34,
+      "created_at": "2026-11-20T21:27:47.939823Z"
+    },
+    {
+      "order_id": "b256cdc2-02fc-45e4-a2c8-016c59114009",
+      "symbol": "NVDA",
+      "side": "buy",
+      "qty": 5.0,
+      "status": "filled",
+      "filled_qty": 5.0,
+      "filled_avg_price": 161.09,
+      "created_at": "2026-11-20T21:27:49.411981Z"
+    },
+    {
+      "order_id": "9458cdb3-57a0-4dee-b68a-c9d83c29b832",
+      "symbol": "MU",
+      "side": "buy",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 683.18,
+      "created_at": "2026-11-20T21:27:48.779474Z"
+    },
+    {
+      "order_id": "811e25f5-6f29-4802-b19a-96a53055004c",
+      "symbol": "AMD",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 465.18,
+      "created_at": "2026-11-20T21:27:48.548573Z"
+    },
+    {
+      "order_id": "6bd12d8b-fd96-4b3c-91b4-c52a7c31054c",
+      "symbol": "TSLA",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 378.29,
+      "created_at": "2026-11-20T21:27:49.216146Z"
+    },
+    {
+      "order_id": "6860150c-c571-4ae5-b95b-1cd0a9323316",
+      "symbol": "GOOGL",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 282.73,
+      "created_at": "2026-11-20T21:27:48.082994Z"
+    },
+    {
+      "order_id": "62f4b4ad-1d39-4c56-821c-c8309d6b663b",
+      "symbol": "AVGO",
+      "side": "buy",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 321.95,
+      "created_at": "2026-11-20T21:27:49.004931Z"
+    },
+    {
+      "order_id": "bc2ed759-07f6-40b1-81dc-12f49c88be62",
+      "symbol": "AAPL",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 349.31,
+      "created_at": "2026-11-20T21:27:48.196259Z"
+    },
+    {
+      "order_id": "97b55393-2908-40b9-a4f2-cecec27e8480",
+      "symbol": "AVGO",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 339.76,
+      "created_at": "2026-11-19T21:44:17.426503Z"
+    },
+    {
+      "order_id": "a5274d05-5c66-4958-9370-ec38df93174a",
+      "symbol": "GOOGL",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 274.57,
+      "created_at": "2026-11-19T21:44:17.874012Z"
+    },
+    {
+      "order_id": "7eecf751-41ff-4966-b924-5807a19071ec",
+      "symbol": "AAPL",
+      "side": "sell",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 352.205,
+      "created_at": "2026-11-19T21:44:18.126944Z"
+    },
+    {
+      "order_id": "4f2788ca-082f-4fec-ae74-7ddada4248e6",
+      "symbol": "TSLA",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 366.69,
+      "created_at": "2026-11-19T21:44:17.734676Z"
+    },
+    {
+      "order_id": "4dd45074-e0ca-4b9f-b800-7643e13dac67",
+      "symbol": "MSFT",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 491.11,
+      "created_at": "2026-11-19T21:44:18.009485Z"
+    },
+    {
+      "order_id": "40e827b3-7b52-47e9-9282-6e6f84f071c9",
+      "symbol": "AMZN",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 252.05,
+      "created_at": "2026-11-19T21:44:17.584374Z"
+    },
+    {
+      "order_id": "20aa67b7-0f52-41d4-989a-8f7dad2013f3",
+      "symbol": "MU",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 656.16,
+      "created_at": "2026-11-19T21:44:18.405074Z"
+    },
+    {
+      "order_id": "cc584487-ae95-4424-a9dd-e3cae88436e5",
+      "symbol": "NVDA",
+      "side": "sell",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 142.52,
+      "created_at": "2026-11-19T21:44:18.277607Z"
+    },
+    {
+      "order_id": "fae15b97-5bee-43ed-85f0-794acc197e24",
+      "symbol": "AMZN",
+      "side": "buy",
+      "qty": 35.0,
+      "status": "filled",
+      "filled_qty": 35.0,
+      "filled_avg_price": 273.64,
+      "created_at": "2026-11-18T21:32:01.697473Z"
+    },
+    {
+      "order_id": "f6707503-fd18-4ffb-91e8-ca5198f20ab5",
+      "symbol": "MSFT",
+      "side": "buy",
+      "qty": 18.0,
+      "status": "filled",
+      "filled_qty": 18.0,
+      "filled_avg_price": 521.118333,
+      "created_at": "2026-11-18T21:32:01.462936Z"
+    },
+    {
+      "order_id": "ddbc3547-5a3f-4e08-a918-0af46ed16c3c",
+      "symbol": "TSLA",
+      "side": "buy",
+      "qty": 24.0,
+      "status": "filled",
+      "filled_qty": 24.0,
+      "filled_avg_price": 391.50875,
+      "created_at": "2026-11-18T21:32:02.232384Z"
+    },
+    {
+      "order_id": "da55811d-4140-4bbb-9b76-9663230dbec9",
+      "symbol": "AAPL",
+      "side": "buy",
+      "qty": 27.0,
+      "status": "filled",
+      "filled_qty": 27.0,
+      "filled_avg_price": 353.8,
+      "created_at": "2026-11-18T21:32:03.011021Z"
+    },
+    {
+      "order_id": "9c8c6195-0002-43ae-9b0a-3ba8c3c83dbd",
+      "symbol": "MU",
+      "side": "buy",
+      "qty": 13.0,
+      "status": "filled",
+      "filled_qty": 13.0,
+      "filled_avg_price": 740.75,
+      "created_at": "2026-11-18T21:32:01.957943Z"
+    },
+    {
+      "order_id": "47dff93d-45d1-49a7-85d5-6e3bd3cba202",
+      "symbol": "AMD",
+      "side": "buy",
+      "qty": 18.0,
+      "status": "filled",
+      "filled_qty": 18.0,
+      "filled_avg_price": 540.89,
+      "created_at": "2026-11-18T21:32:00.702713Z"
+    },
+    {
+      "order_id": "3f7351f3-9054-49ba-9da6-6cb97550016e",
+      "symbol": "NVDA",
+      "side": "buy",
+      "qty": 63.0,
+      "status": "filled",
+      "filled_qty": 63.0,
+      "filled_avg_price": 155.755397,
+      "created_at": "2026-11-18T21:32:00.953979Z"
+    },
+    {
+      "order_id": "2df37bea-bc06-4373-a015-469e8cdf5cb1",
+      "symbol": "GOOGL",
+      "side": "buy",
+      "qty": 33.0,
+      "status": "filled",
+      "filled_qty": 33.0,
+      "filled_avg_price": 294.171516,
+      "created_at": "2026-11-18T21:32:02.487667Z"
+    },
+    {
+      "order_id": "236c48ab-02a9-447b-a449-14367fd8ed82",
+      "symbol": "META",
+      "side": "buy",
+      "qty": 15.0,
+      "status": "filled",
+      "filled_qty": 15.0,
+      "filled_avg_price": 627.305333,
+      "created_at": "2026-11-18T21:32:02.759185Z"
+    },
+    {
+      "order_id": "fc35409c-a687-46c6-9c02-a66e5313e0ab",
+      "symbol": "AVGO",
+      "side": "buy",
+      "qty": 26.0,
+      "status": "filled",
+      "filled_qty": 26.0,
+      "filled_avg_price": 363.001154,
+      "created_at": "2026-11-18T21:32:01.225872Z"
+    },
+    {
+      "order_id": "f6b95b76-d397-4f12-8a47-6f837584297f",
+      "symbol": "NVDA",
+      "side": "sell",
+      "qty": 60.0,
+      "status": "filled",
+      "filled_qty": 60.0,
+      "filled_avg_price": 158.674333,
+      "created_at": "2026-11-17T21:52:29.461916Z"
+    },
+    {
+      "order_id": "cab88803-5105-4f62-bc68-18051363d3e8",
+      "symbol": "AMZN",
+      "side": "sell",
+      "qty": 36.0,
+      "status": "filled",
+      "filled_qty": 36.0,
+      "filled_avg_price": 260.69,
+      "created_at": "2026-11-17T21:52:30.704756Z"
+    },
+    {
+      "order_id": "c69f1df5-d9f6-4d6f-97cf-11888a781fcd",
+      "symbol": "MSFT",
+      "side": "sell",
+      "qty": 18.0,
+      "status": "filled",
+      "filled_qty": 18.0,
+      "filled_avg_price": 505.49,
+      "created_at": "2026-11-17T21:52:29.254696Z"
+    },
+    {
+      "order_id": "bdd5ae15-aa6c-4ef1-9b2f-6591e60ba322",
+      "symbol": "AAPL",
+      "side": "sell",
+      "qty": 26.0,
+      "status": "filled",
+      "filled_qty": 26.0,
+      "filled_avg_price": 353.612692,
+      "created_at": "2026-11-17T21:52:30.498014Z"
+    },
+    {
+      "order_id": "9f982410-b411-49e3-be9d-a49ff3fa96cd",
+      "symbol": "AMD",
+      "side": "sell",
+      "qty": 18.0,
+      "status": "filled",
+      "filled_qty": 18.0,
+      "filled_avg_price": 517.09,
+      "created_at": "2026-11-17T21:52:29.877153Z"
+    },
+    {
+      "order_id": "902a8a60-152b-4498-aade-dec73875ee83",
+      "symbol": "META",
+      "side": "sell",
+      "qty": 15.0,
+      "status": "filled",
+      "filled_qty": 15.0,
+      "filled_avg_price": 617.742,
+      "created_at": "2026-11-17T21:52:30.084887Z"
+    },
+    {
+      "order_id": "6651cfe6-ea5f-44f7-bc56-59ad38b633f6",
+      "symbol": "TSLA",
+      "side": "sell",
+      "qty": 24.0,
+      "status": "filled",
+      "filled_qty": 24.0,
+      "filled_avg_price": 387.95,
+      "created_at": "2026-11-17T21:52:28.835645Z"
+    },
+    {
+      "order_id": "4ed2ca2c-f768-4ef8-88a1-4dbadd9e6b77",
+      "symbol": "GOOGL",
+      "side": "sell",
+      "qty": 33.0,
+      "status": "filled",
+      "filled_qty": 33.0,
+      "filled_avg_price": 283.935455,
+      "created_at": "2026-11-17T21:52:29.046354Z"
+    },
+    {
+      "order_id": "329aeeaa-cc2a-4c90-93b1-4711bca6585a",
+      "symbol": "MU",
+      "side": "sell",
+      "qty": 13.0,
+      "status": "filled",
+      "filled_qty": 13.0,
+      "filled_avg_price": 721.0,
+      "created_at": "2026-11-17T21:52:29.668225Z"
+    },
+    {
+      "order_id": "fde16521-e90e-4fdb-985d-5290ab7ec163",
+      "symbol": "AVGO",
+      "side": "sell",
+      "qty": 28.0,
+      "status": "filled",
+      "filled_qty": 28.0,
+      "filled_avg_price": 350.766786,
+      "created_at": "2026-11-17T21:52:30.292931Z"
+    },
+    {
+      "order_id": "c7c7b715-a041-4858-a7b6-9a73a8ab7b71",
+      "symbol": "TSLA",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 380.72,
+      "created_at": "2026-11-16T22:59:40.460409Z"
+    },
+    {
+      "order_id": "a9e46770-d7c0-4911-901e-de6c8f7e3f9d",
+      "symbol": "AAPL",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 352.86,
+      "created_at": "2026-11-16T22:59:40.275078Z"
+    },
+    {
+      "order_id": "e14ad230-9328-4876-a8dc-8f050bb22237",
+      "symbol": "MU",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 720.0,
+      "created_at": "2026-11-16T22:59:40.759073Z"
+    },
+    {
+      "order_id": "5297bf8e-da14-447b-a6fe-39998b90c26d",
+      "symbol": "AVGO",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 345.33,
+      "created_at": "2026-11-13T20:37:31.45011Z"
+    },
+    {
+      "order_id": "46963089-929a-4644-8a7f-8f189e29dc5c",
+      "symbol": "AMZN",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 265.83,
+      "created_at": "2026-11-13T20:37:31.161193Z"
+    },
+    {
+      "order_id": "e06cb300-8ff8-4685-b042-c5f8f0ca04a2",
+      "symbol": "AMD",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 530.8,
+      "created_at": "2026-11-13T20:37:30.86246Z"
+    },
+    {
+      "order_id": "dd593a14-6114-49d5-88ec-ec76b66780b2",
+      "symbol": "META",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 640.24,
+      "created_at": "2026-11-13T20:37:30.556277Z"
+    },
+    {
+      "order_id": "da443bd5-c3c8-4743-ab91-9a8dab9e23f7",
+      "symbol": "MU",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 789.14,
+      "created_at": "2026-11-12T21:01:27.796786Z"
+    },
+    {
+      "order_id": "c43070d7-9971-4ae7-8630-7ea18a36c611",
+      "symbol": "NVDA",
+      "side": "buy",
+      "qty": 3.0,
+      "status": "filled",
+      "filled_qty": 3.0,
+      "filled_avg_price": 166.67,
+      "created_at": "2026-11-12T21:01:28.352758Z"
+    },
+    {
+      "order_id": "9c461509-bbd1-42c0-a31c-4299f210d8da",
+      "symbol": "META",
+      "side": "buy",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 626.52,
+      "created_at": "2026-11-12T21:01:28.638683Z"
+    },
+    {
+      "order_id": "687c5a10-34cd-413a-9050-a9b47d49e385",
+      "symbol": "AVGO",
+      "side": "sell",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 355.79,
+      "created_at": "2026-11-12T21:01:27.539416Z"
+    },
+    {
+      "order_id": "f46581cd-f5ad-480f-b9c0-3d20f910b1cb",
+      "symbol": "AMD",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 566.13,
+      "created_at": "2026-11-12T21:01:28.050021Z"
+    },
+    {
+      "order_id": "22f023a0-cb0f-4d94-a228-c414501031da",
+      "symbol": "MSFT",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 533.85,
+      "created_at": "2026-11-10T20:34:05.38294Z"
+    },
+    {
+      "order_id": "51083baa-2eec-4a0b-93a4-78ad47aa25f3",
+      "symbol": "NVDA",
+      "side": "buy",
+      "qty": 3.0,
+      "status": "filled",
+      "filled_qty": 3.0,
+      "filled_avg_price": 168.21,
+      "created_at": "2026-11-10T20:34:05.185099Z"
+    },
+    {
+      "order_id": "9307e34c-1bc1-4c71-a7bf-08e22e937f1a",
+      "symbol": "AMZN",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 271.74,
+      "created_at": "2026-11-10T20:34:05.011406Z"
+    },
+    {
+      "order_id": "add5a875-fca3-4832-8bf1-cac1d2932fb6",
+      "symbol": "AVGO",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 332.52,
+      "created_at": "2026-11-10T20:34:04.944621Z"
+    },
+    {
+      "order_id": "d8c01117-677f-411c-abf0-84535defdfa1",
+      "symbol": "META",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 645.14,
+      "created_at": "2026-11-10T20:34:04.878894Z"
+    },
+    {
+      "order_id": "f63efb69-07b3-4369-82a6-e9d2dd469314",
+      "symbol": "AMD",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 515.77,
+      "created_at": "2026-11-10T20:34:04.81552Z"
+    },
+    {
+      "order_id": "c9f73660-5026-4cc7-a59d-2b2c7387e8f8",
+      "symbol": "AVGO",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 318.38,
+      "created_at": "2026-11-09T23:06:49.214744Z"
+    },
+    {
+      "order_id": "7e94a75d-27c6-431a-8f61-7767aa868d6a",
+      "symbol": "AMZN",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 266.64,
+      "created_at": "2026-11-09T23:06:49.972589Z"
+    },
+    {
+      "order_id": "6b320c83-02fb-46f4-b5be-52e759b13db4",
+      "symbol": "AMD",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 501.0,
+      "created_at": "2026-11-09T23:06:49.408804Z"
+    },
+    {
+      "order_id": "6b2c88ab-37d7-4051-adf5-5d883286bbd5",
+      "symbol": "NVDA",
+      "side": "buy",
+      "qty": 5.0,
+      "status": "filled",
+      "filled_qty": 5.0,
+      "filled_avg_price": 172.52,
+      "created_at": "2026-11-09T23:06:49.702627Z"
+    },
+    {
+      "order_id": "e4ebd663-6cf3-4d68-86e8-739b61074ec1",
+      "symbol": "GOOGL",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 288.37,
+      "created_at": "2026-11-09T23:06:50.248679Z"
+    },
+    {
+      "order_id": "ab0f6db3-552f-4860-9375-e3be4827b14b",
+      "symbol": "MU",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 693.2,
+      "created_at": "2026-11-06T20:02:30.996811Z"
+    },
+    {
+      "order_id": "c2e69c1f-0de8-47ef-ba28-9d958b81a5a0",
+      "symbol": "AVGO",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 293.68,
+      "created_at": "2026-11-06T20:02:30.715937Z"
+    },
+    {
+      "order_id": "4e2186b9-33fd-4550-8948-d5b4fa48c22a",
+      "symbol": "AAPL",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 343.24,
+      "created_at": "2026-11-06T20:02:30.453374Z"
+    },
+    {
+      "order_id": "e2e59a2a-e2fe-4545-a245-c3628798a3c1",
+      "symbol": "TSLA",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 361.4,
+      "created_at": "2026-11-06T20:02:30.204749Z"
+    },
+    {
+      "order_id": "b28f8f0b-124a-4b48-a2f6-c43b154c5321",
+      "symbol": "NVDA",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 188.05,
+      "created_at": "2026-11-06T20:02:30.045986Z"
+    },
+    {
+      "order_id": "82e0cd8d-581c-424e-833d-667bcb8d18f9",
+      "symbol": "AMD",
+      "side": "sell",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 447.705,
+      "created_at": "2026-11-06T20:02:29.894692Z"
+    },
+    {
+      "order_id": "81485c31-8bb2-4383-ac1b-47fd4d72e864",
+      "symbol": "AMD",
+      "side": "buy",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 413.605,
+      "created_at": "2026-11-05T20:46:57.284385Z"
+    },
+    {
+      "order_id": "f074125e-b5ff-4ebb-8821-aca6f65dcf4a",
+      "symbol": "TSLA",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 344.0,
+      "created_at": "2026-11-05T20:46:57.020421Z"
+    },
+    {
+      "order_id": "40f26abc-f631-40e9-bfaf-8b1d5ca1f7d9",
+      "symbol": "NVDA",
+      "side": "buy",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 181.87,
+      "created_at": "2026-11-05T20:46:56.799864Z"
+    },
+    {
+      "order_id": "96cf1ef3-0412-4181-b2e4-54bb9e1cf86a",
+      "symbol": "AMZN",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 259.39,
+      "created_at": "2026-11-05T20:46:56.570048Z"
+    },
+    {
+      "order_id": "d7f462ef-4d55-476d-83b2-608ec2dfd793",
+      "symbol": "GOOGL",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 283.53,
+      "created_at": "2026-11-05T20:46:56.411187Z"
+    },
+    {
+      "order_id": "7b7e0fa4-b15e-48a4-80e7-5e9e814eeb9e",
+      "symbol": "AAPL",
+      "side": "sell",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 345.955,
+      "created_at": "2026-11-05T20:46:56.253581Z"
+    },
+    {
+      "order_id": "36a5384f-734e-45d1-9830-23f8b630a138",
+      "symbol": "MU",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 797.71,
+      "created_at": "2026-11-04T20:31:05.444641Z"
+    },
+    {
+      "order_id": "66ffb691-d956-4825-b6e5-6ba079c138b0",
+      "symbol": "AVGO",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 326.08,
+      "created_at": "2026-11-04T20:31:05.134211Z"
+    },
+    {
+      "order_id": "447fce0c-056c-43a1-b0c2-34e03f8db495",
+      "symbol": "TSLA",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 386.26,
+      "created_at": "2026-11-04T20:31:04.737832Z"
+    },
+    {
+      "order_id": "3f526603-3454-4c18-98b0-51beebb43d91",
+      "symbol": "NVDA",
+      "side": "buy",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 202.26,
+      "created_at": "2026-11-04T20:31:04.472496Z"
+    },
+    {
+      "order_id": "568d7c89-a29b-498a-a1a0-2390c646eb07",
+      "symbol": "AMZN",
+      "side": "sell",
+      "qty": 2.0,
+      "status": "filled",
+      "filled_qty": 2.0,
+      "filled_avg_price": 268.27,
+      "created_at": "2026-11-04T20:31:04.201457Z"
+    },
+    {
+      "order_id": "43887edf-245c-4aaa-9459-c3b4c45f9b51",
+      "symbol": "GOOGL",
+      "side": "sell",
+      "qty": 1.0,
+      "status": "filled",
+      "filled_qty": 1.0,
+      "filled_avg_price": 290.74,
+      "created_at": "2026-11-04T20:31:04.04747Z"
+    }
+  ],
+  "watchlist": {
+    "科技龍頭": [
+      {
+        "symbol": "AAPL",
+        "price": 355.58,
+        "pe_ratio": 39.6,
+        "1d_pct": 0.4265,
+        "1w_pct": 0.8881,
+        "1m_pct": 2.5209
+      },
+      {
+        "symbol": "MSFT",
+        "price": 489.93,
+        "pe_ratio": 25.57,
+        "1d_pct": -1.2497,
+        "1w_pct": -3.4259,
+        "1m_pct": -7.6136
+      },
+      {
+        "symbol": "NVDA",
+        "price": 149.3,
+        "pe_ratio": 16.04,
+        "1d_pct": -3.913,
+        "1w_pct": -1.0996,
+        "1m_pct": -31.4949
+      },
+      {
+        "symbol": "GOOGL",
+        "price": 273.1,
+        "pe_ratio": 14.26,
+        "1d_pct": -2.1322,
+        "1w_pct": -3.3069,
+        "1m_pct": -14.8107
+      },
+      {
+        "symbol": "META",
+        "price": 609.89,
+        "pe_ratio": 20.81,
+        "1d_pct": 3.4027,
+        "1w_pct": -1.0529,
+        "1m_pct": -1.6608
+      }
+    ],
+    "AI 概念": [
+      {
+        "symbol": "AMD",
+        "price": 406.03,
+        "pe_ratio": 86.76,
+        "1d_pct": -1.7519,
+        "1w_pct": -23.4108,
+        "1m_pct": -27.5283
+      },
+      {
+        "symbol": "PLTR",
+        "price": 163.59,
+        "pe_ratio": 115.2,
+        "1d_pct": 1.4952,
+        "1w_pct": 4.4169,
+        "1m_pct": -17.6823
+      },
+      {
+        "symbol": "AI",
+        "price": 10.0,
+        "pe_ratio": -21.27,
+        "1d_pct": 1.626,
+        "1w_pct": -0.1996,
+        "1m_pct": -18.633
+      },
+      {
+        "symbol": "SNOW",
+        "price": 267.72,
+        "pe_ratio": 86.91,
+        "1d_pct": -1.2431,
+        "1w_pct": -4.2558,
+        "1m_pct": -20.6568
+      },
+      {
+        "symbol": "CRWD",
+        "price": 209.3,
+        "pe_ratio": 1744.17,
+        "1d_pct": -0.7398,
+        "1w_pct": -11.6989,
+        "1m_pct": -21.9088
+      }
+    ],
+    "ETF": [
+      {
+        "symbol": "QQQ",
+        "price": 633.93,
+        "pe_ratio": 26.11,
+        "1d_pct": -0.6535,
+        "1w_pct": -3.8786,
+        "1m_pct": -12.1068
+      },
+      {
+        "symbol": "SPY",
+        "price": 716.7,
+        "pe_ratio": 22.8,
+        "1d_pct": -0.2894,
+        "1w_pct": -1.8488,
+        "1m_pct": -6.881
+      },
+      {
+        "symbol": "ARKK",
+        "price": 67.36,
+        "pe_ratio": 43.48,
+        "1d_pct": -0.1482,
+        "1w_pct": -5.2069,
+        "1m_pct": -20.5473
+      },
+      {
+        "symbol": "SOXX",
+        "price": 127.98,
+        "pe_ratio": 27.09,
+        "1d_pct": -0.4976,
+        "1w_pct": -9.7779,
+        "1m_pct": -24.8738
+      },
+      {
+        "symbol": "VGT",
+        "price": 102.56,
+        "pe_ratio": 25.28,
+        "1d_pct": -0.7356,
+        "1w_pct": -4.1764,
+        "1m_pct": -16.4685
+      }
+    ]
+  },
+  "disclaimer": "⚠️ 本報告所有內容僅供資訊整理與研究參考，不構成任何投資建議。"
+}
